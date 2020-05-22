@@ -1,23 +1,77 @@
+/* reset do CSS (*)- retira os estilos padrão centralização genérica que servirá para todos os elementos -  sendo que o box-sizing serve para centralizar o texto a partir da borda*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* imagem de fundo e tamanho da imagem*/
 body {
-    background: url('https://wallpapercave.com/wp/wp4471040.jpg');
-    font-family: arial;
-    background-size: 1500px 1000px;
-    height: 100vh
+  background-image: url('../img/Fundo\ Tela.jpg');
+  font-family: arial;
+  background-size: auto 100vh;
+  height: 100vh;
+  font-size: 12px;  
+}
+
+/* se a tela tiver pelo menos 400px vai carregar esses estilos */
+@media (min-width: 400px) {
+body {
+  font-size: 14px;
+}
+}
+
+/* se a tela tiver pelo menos 600px vai carregar esses estilos */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+    background-image: none;
+    background-color: tomato;
   }
-  
-  .menu {
-    background: white;
-    font-family: arial;
+ }
+
+/* se a tela tiver pelo menos 1200px vai carregar esses estilos */
+@media (min-width: 1200px) {
+  body {
+    font-size: 22px;
   }
-  
-  .menu li {
-    list-style: none;
-  }
-  
-  .menu ul {
-    display: flex;
-    justify-content: space-around;
-  }
+}
+
+/* tag header configurações*/
+header {
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+/* fonte geral do site */
+.menu {
+  background-color: white;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+}
+
+/*estilo menu ul que abrange o menu li*/
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Estilo menu li "sobre" formação" "contato"*/
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  color: black;
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+}
+
   
   a {
     color: black;
@@ -27,14 +81,22 @@ body {
   a:hover {
     text-decoration: underline;
   }
-  .site-subtitle,.site-title {
+  .site-title {
     color: white;
     text-align: center;
-    font-size: 100px;
+    font-size: 3em;
+    line-height: 1em;
+    margin-bottom: 20px;
   }
   
   .site-subtitle {
-    font-size: 50px;
+    color: white;
+    font-size: 2em;
     text-align: center  ;
     font-style: italic;
+  }
+
+  .img-portfolio{
+    height: 200px;
+    width: 300px;
   }
