@@ -9,15 +9,18 @@
 body {
   background-image: url('../img/Fundo\ Tela.jpg');
   font-family: arial;
-  background-size: auto 100vh;
+  background-size: auto 100hv;
   height: 100vh;
-  font-size: 12px;  
+  width: auto 100vh;
+  font-size: 12px;
 }
+
 
 /* se a tela tiver pelo menos 400px vai carregar esses estilos */
 @media (min-width: 400px) {
-body {
+body {  
   font-size: 14px;
+  font-family: 'Roboto', sans-serif;
 }
 }
 
@@ -32,6 +35,7 @@ body {
 @media (min-width: 1200px) {
   body {
     font-size: 22px;
+    background-size: auto 127vh;
   }
 }
 
@@ -40,9 +44,17 @@ header {
 height: 100vh;
 display: flex;
 justify-content: center;
-align-items: center;
+align-items: top;
 flex-wrap: wrap;
 }
+
+/* margem superior para descer o texto do título e subtítulo*/
+h1 {
+  padding-top: 150px;
+}
+
+/*configurações do título*/
+
 
 /* fonte geral do site */
 .menu {
@@ -70,31 +82,114 @@ flex-wrap: wrap;
   text-decoration: none;
 }
 
-  
-  a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  .site-title {
-    color: white;
-    text-align: center;
-    font-size: 3em;
-    line-height: 1em;
-    margin-bottom: 20px;
-  }
-  
-  .site-subtitle {
-    color: white;
-    font-size: 2em;
-    text-align: center  ;
-    font-style: italic;
+.site-title {
+  font-family: 'Assistant', sans-serif;
+  color: black;
+  text-align: center;
+  font-style: bold;
+  font-size: 3em;
+  line-height: 1em;
+  margin-bottom: 20px;    
+}
+
+/* configurações do subtitulo*/
+.site-subtitle {
+  font-family: 'Lobster', cursive;
+  color: black;
+  font-size: 2em;
+  text-align: center;    
+  font-style: italic;    
+}
+
+/* propriedade genérica*/
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}  
+   
+/* configurações da page "Formação"*/  
+  figcaption {
+    font-family: 'Roboto', sans-serif;
   }
 
-  .img-portfolio{
+  .formacao {
+    background-color: rgb(194, 194, 142);
+    padding: 2em;
+    height: 100vh;
+    align-items: center;    
+  }
+  
+  /*configurações título "formação*/
+  .formacao h2 {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+  
+  }
+  
+  /* tamanho das imagens do menu "formação"*/
+  .img-formacao{
+    height: 180px;
+    width: 240px;
+  }
+
+  /* configuração da <grid> para divisão das imagens em colunas*/
+  .formacao .grid {
+    display: grid;
+    gap: 2em;
+    font-size: 1em;
+    justify-content: center;      
+  }
+
+  @media (min-width: 560px) {
+    .formacao .grid, .img-formacao{
+    grid-template-columns: 240px 240px;
+    gap: 3em;
+    height: 200x;
+    width: 280px;
+    justify-content: flex-start;
+    font-size: 1em;
+    }
+  }
+
+  @media (min-width: 920px) {
+    .formacao .grid {
+      grid-template-columns: 240px 240px 240px;
+      gap: 3em;
+      height: 550px;
+      width: 1550px;
+      justify-content: flex-start;            
+      font-size: 1em;      
+     }
+  }
+
+  @media (min-width: 1500px) {
+    .formacao .grid {
+      grid-template-columns: 240px 240px 240px;
+      gap: 3em;
+      height: 550px;
+      width: 1550px;
+      justify-content: center;            
+      font-size: 1em;      
+     }
+  }
+
+  .formacao figure {
+    text-align: center;
     height: 200px;
-    width: 300px;
+    width: 280px;
+    margin-bottom: 2em; 
+  }
+
+  /* começa as configurações "sobre*/
+
+  .sobre {
+    background-color: rgb(194, 194, 142);
+    padding: 2em;
+    height: 100vh;    
+    align-items: center;    
   }
