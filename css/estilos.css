@@ -160,6 +160,7 @@ a:hover {
   }
   
   /*configurações título "formação*/
+  .sobre h2,
   .contato,
   .formacao h2 {
     font-family: 'Poppins', sans-serif;
