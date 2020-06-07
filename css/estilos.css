@@ -99,7 +99,7 @@ h1 {
   color: black;
   text-align: center;
   font-style: bold;
-  font-size: 3em;
+  font-size: 5em;
   line-height: 1em;
   margin-bottom: 20px;    
 }
@@ -108,7 +108,7 @@ h1 {
 .site-subtitle {
   font-family: 'Lobster', cursive;
   color: black;
-  font-size: 2em;
+  font-size: 3em;
   text-align: center;    
   font-style: italic;    
 }
@@ -117,7 +117,7 @@ h1 {
 .titulos {
   transform: scale(0.5) translatey(50vh);
   opacity: 0;
-  animation: linear 3s animacaoTitulos forwards;
+  animation: linear 2s animacaoTitulos forwards;
 }
 
 @keyframes animacaoTitulos {
@@ -135,7 +135,6 @@ h1 {
   
 }
 
-
 /* propriedade genérica*/
 a {
   color: black;
@@ -145,14 +144,21 @@ a {
 a:hover {
   text-decoration: underline;
 }  
-   
+
+/* configuração texto sobre */
+.sobre p {
+  font-size: 2em;
+}
+
+
 /* configurações da page "Formação"*/  
   figcaption {
     font-family: 'Roboto', sans-serif;
   }
 
   .contato,
-  .formacao {
+  .formacao,
+  .sobre {
     background-color: rgb(194, 194, 142);
     padding: 2em;
     min-height: 100vh;
@@ -161,7 +167,7 @@ a:hover {
   
   /*configurações título "formação*/
   .sobre h2,
-  .contato,
+  .contato h2,
   .formacao h2 {
     font-family: 'Poppins', sans-serif;
     margin-bottom: 1.5em;
@@ -175,6 +181,7 @@ a:hover {
     width: 240px;
     border-radius: 10px;
     transition: 0.5s;
+    
 
     /* a propriedade objetct-fit faz a adequação da imagem ao tamanho da coluna
     
@@ -201,7 +208,7 @@ a:hover {
     display: grid;
     gap: 2em;
     font-size: 1em;
-    justify-content: center;      
+    justify-content: center;          
   }
 
   @media (min-width: 560px) {
@@ -233,10 +240,10 @@ a:hover {
       grid-template-columns: 400px 400px 400px;
       gap: 3em;
       height: 550px;
-      width: 1550px;
+      width: 2000px;
       justify-content: center;       
       font-size: 1em;   
-      text-align: center;   
+      text-align: center;         
      }
   }
 
@@ -245,7 +252,7 @@ a:hover {
     text-align: center;
     height: 200px;
     width: 375px;
-    margin-bottom: 3em; 
+    margin-bottom: 4em; 
   }
 
   /* começa as configurações "sobre*/
@@ -262,8 +269,9 @@ a:hover {
 
   .contato a {
     color: black;
-    font-size: 1em;
+    font-size: 2em;
     transition: 0.5s;
+    
   }
 
   .contato a:hover {
