@@ -250,7 +250,7 @@ a:hover {
   }
   
   .img-formacao:hover {
-    transform: scale(2.3);
+    transform: scale(2.6);
   }
 
   /*
@@ -340,8 +340,8 @@ a:hover {
   /* formatação titulo dos diplomas */
   .formacao figure {
     text-align: center;
-    height: 200px;
-    width: 375px;
+    height: 185px;
+    width: 283.66px;
     margin-bottom: 4em; 
   }
 
