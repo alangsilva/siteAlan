@@ -16,37 +16,51 @@ body {
 }
 
 
-
 /* se a tela tiver pelo menos 400px vai carregar esses estilos */
-@media (min-width: 400px) {
-body {  
-  font-size: 14px;
-  font-family: 'Roboto', sans-serif;
-  min-height: 100vh;
+@media (min-width: 200px) {
+  body {  
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;  
+  }
   
 }
+/* se a tela tiver pelo menos 400px vai carregar esses estilos */
+@media (min-width: 400px) {
+  body {  
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;  
+  }
+  
 }
 
 /* se a tela tiver pelo menos 600px vai carregar esses estilos */
 @media (min-width: 600px) {
   body {
     font-size: 14px;
-    min-height: 100vh;
-    
+    min-height: 100vh;    
   }
- }
+  
+}
+
 
 /* se a tela tiver pelo menos 1200px vai carregar esses estilos */
 @media (min-width: 1200px) {
-  body {
+  body{
     font-size: 22px;
     background-size: auto 100%;
     min-height: 100vh;
     
+    
   }
 }
 
-
+@media (min-width: 1201px) {
+.img-formacao:hover {
+  transform: scale(2.6);
+}
+}
 
 /* tag header configurações*/
 header {
@@ -249,9 +263,7 @@ a:hover {
     mas eu deixei destivado pois para o meu objetivo não cabia, pois os diplomas são do mesmo tamanho, retangulares*/
   }
   
-  .img-formacao:hover {
-    transform: scale(2.6);
-  }
+  
 
   /*
 
