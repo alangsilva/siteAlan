@@ -16,6 +16,7 @@ body {
 }
 
 
+
 /* se a tela tiver pelo menos 400px vai carregar esses estilos */
 @media (min-width: 400px) {
 body {  
@@ -37,10 +38,13 @@ body {
 @media (min-width: 1200px) {
   body {
     font-size: 22px;
-    background-size: auto 127vh;
+    background-size: auto 100%;
     min-height: 100vh;
+    
   }
 }
+
+
 
 /* tag header configurações*/
 header {
@@ -162,6 +166,7 @@ a:hover {
     padding: 2em;
     min-height: 100vh;
     align-items: center;
+    
    
   }
   
@@ -312,7 +317,7 @@ a:hover {
       grid-template-columns: 400px 400px 400px;
       gap: 3em;
       height: 550px;
-      width: 1550px;
+      width: 95vw;
       justify-content: flex-start;            
       font-size: 1em;      
       text-align: center;
@@ -324,7 +329,7 @@ a:hover {
       grid-template-columns: 400px 400px 400px;
       gap: 3em;
       height: 550px;
-      width: 2000px;
+      width: 95vw;
       justify-content: center;       
       font-size: 1em;   
       text-align: center;         
