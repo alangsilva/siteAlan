@@ -23,6 +23,7 @@ body {
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
   min-height: 100vh;
+  
 }
 }
 
@@ -31,6 +32,7 @@ body {
   body {
     font-size: 14px;
     min-height: 100vh;
+    
   }
  }
 
@@ -166,7 +168,6 @@ a:hover {
     padding: 2em;
     min-height: 100vh;
     align-items: center;
-    
    
   }
   
@@ -174,7 +175,7 @@ a:hover {
   .contato,
   .formacao,
   .sobre {
-    max-width: 1200px;
+    max-width: 1500px;
     
   }
 }
@@ -329,7 +330,7 @@ a:hover {
       grid-template-columns: 400px 400px 400px;
       gap: 3em;
       height: 550px;
-      width: 95vw;
+      width: 96.8 vw;
       justify-content: center;       
       font-size: 1em;   
       text-align: center;         
@@ -348,8 +349,7 @@ a:hover {
   /* começa as configurações "sobre*/
 
   .sobre {
-    padding: 2em;
-    height: 100vh;    
+    padding: 2em;        
     align-items: center;    
   }
 
