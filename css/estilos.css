@@ -123,8 +123,8 @@ h1 {
   text-align: center;
   font-style: bold;
   font-size: 5em;
-  line-height: 5em;
-  margin-bottom: -100px;    
+  line-height: 1em;
+  margin-bottom: 20px;    
 }
 
 /* configurações do subtitulo*/
