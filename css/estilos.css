@@ -7,7 +7,7 @@
 
 /* imagem de fundo e tamanho da imagem*/
 body {
-  background-image: url('../img/Fundo\ Tela.jpg');
+  background-image: url('../img/Fundo_Novo_6.jpg');
   font-family: arial;
   background-size: auto 100hv;
   height: 100vh;
@@ -41,13 +41,12 @@ body {
     font-size: 14px;
     min-height: 100vh;    
   }
-  
 }
   
 }
 /* se a tela tiver pelo menos 1200px vai carregar esses estilos */
 @media (min-width: 1200px) {
-  body{
+  body {
     font-size: 22px;
     background-size: auto 100%;
     min-height: 100vh;
@@ -58,7 +57,7 @@ body {
 
 @media (min-width: 1201px) {
 .img-formacao:hover {
-  transform: scale(2.6);
+  transform: scale(2.2);
 }
 }
 
@@ -120,21 +119,21 @@ h1 {
 /* configurações do título*/
 .site-title {
   font-family: 'Assistant', sans-serif;
-  color: black;
+  color:white;
   text-align: center;
   font-style: bold;
   font-size: 5em;
-  line-height: 1em;
-  margin-bottom: 20px;    
+  line-height: 5em;
+  margin-bottom: -100px;    
 }
 
 /* configurações do subtitulo*/
 .site-subtitle {
   font-family: 'Lobster', cursive;
-  color: black;
+  color: white;
   font-size: 3em;
   text-align: center;    
-  font-style: italic;    
+  font-style: italic;      
 }
 
 /* configurações e animação da aparição do título e subtítulo*/
@@ -176,7 +175,7 @@ a:hover {
     font-family: 'Roboto', sans-serif;
   }
 
-  .alancubo,
+  
   .contato,
   .formacao,
   .sobre {
@@ -188,7 +187,6 @@ a:hover {
   }
   
 @media (min-width: 2000px) {
-  .alancubo,
   .contato,
   .formacao,
   .sobre {
@@ -217,10 +215,10 @@ a:hover {
 
   .alan,
   .cubogeral {
-    /*clip-path: polygon(89% 0, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);*/
-    margin-right: 11em;
-    height: 160px;
-    width: 125px;
+    clip-path: polygon(89% 0, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+    margin-right: 1.5em;
+    height: 250px;
+    width: 154.5px;
     border-radius: 0px;
     transition: 0.4s; 
   }
@@ -254,45 +252,45 @@ a:hover {
     width: 10px;
     height: 12.5px;
     margin: 15px;
-    margin-left: 125px;
+    margin-left: 25px;
     position: relative;
   }
 
   .cubo img {
     position: absolute;
     opacity: 0.85;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
   }
 
   .cubo img:nth-child(1) 
   {
-    transform: rotate(0deg) translateZ(50px);
+    transform: rotate(0deg) translateZ(75px);
   }
 
   .cubo img:nth-child(2) 
   {
-    transform: rotateY(90deg) translateZ(50px);
+    transform: rotateY(90deg) translateZ(75px);
   }
 
   .cubo img:nth-child(3) 
   {
-    transform: rotateY(180deg) translateZ(50px);
+    transform: rotateY(180deg) translateZ(75px);
   }
 
   .cubo img:nth-child(4) 
   {
-    transform: rotateY(-90deg) translateZ(50px);
+    transform: rotateY(-90deg) translateZ(75px);
   }
 
   .cubo img:nth-child(5) 
   {
-    transform: rotateX(90deg) translateZ(50px);
+    transform: rotateX(90deg) translateZ(75px);
   }
 
   .cubo img:nth-child(6) 
   {
-    transform: rotateX(-90deg) translateZ(50px);
+    transform: rotateX(-90deg) translateZ(75px);
   }
 
   @keyframes loop{
