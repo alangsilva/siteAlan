@@ -62,6 +62,7 @@ body {
 }
 }
 
+
 /* tag header configurações*/
 header {
 height: 100vh;
@@ -175,6 +176,7 @@ a:hover {
     font-family: 'Roboto', sans-serif;
   }
 
+  .alancubo,
   .contato,
   .formacao,
   .sobre {
@@ -186,6 +188,7 @@ a:hover {
   }
   
 @media (min-width: 2000px) {
+  .alancubo,
   .contato,
   .formacao,
   .sobre {
@@ -212,16 +215,23 @@ a:hover {
   margin-bottom: 1.5em;
 }
 
-  .alan {
-    clip-path: polygon(89% 0, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
-    margin-right: 1.5em;
-    height: 250px;
-    width: 154.5px;
+  .alan,
+  .cubogeral {
+    /*clip-path: polygon(89% 0, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);*/
+    margin-right: 11em;
+    height: 320px;
+    width: 350px;
     border-radius: 0px;
     transition: 0.4s; 
   }
 
-  .sobre .alan {
+  /* flota para a foto, ficou o cubo no lugar
+  .sobre alan{
+    float: left;
+  }
+  */
+
+  .sobre .cubogeral{
     float: left;
   }
 
@@ -231,7 +241,69 @@ a:hover {
     clip-path: none;
   }
 
+ /* configuração do cubo alan para rodar a imagem no sobre*/
  
+ .cubogeral {
+   margin-top: 150px;
+   perspective: 1000px;
+   perspective-origin: 50% 50%;
+ }
+ 
+ .cubo {
+    transform-style: preserve-3d;
+    width: 20px;
+    height: 25px;
+    margin: 30px;
+    margin-left: 250px;
+    position: relative;
+  }
+
+  .cubo img {
+    position: absolute;
+    opacity: 0.85;
+    height: 200px;
+    width: 200px;
+  }
+
+  .cubo img:nth-child(1) 
+  {
+    transform: rotate(0deg) translateZ(100px);
+  }
+
+  .cubo img:nth-child(2) 
+  {
+    transform: rotateY(90deg) translateZ(100px);
+  }
+
+  .cubo img:nth-child(3) 
+  {
+    transform: rotateY(180deg) translateZ(100px);
+  }
+
+  .cubo img:nth-child(4) 
+  {
+    transform: rotateY(-90deg) translateZ(100px);
+  }
+
+  .cubo img:nth-child(5) 
+  {
+    transform: rotateX(90deg) translateZ(100px);
+  }
+
+  .cubo img:nth-child(6) 
+  {
+    transform: rotateX(-90deg) translateZ(100px);
+  }
+
+  @keyframes loop{
+    from{transform:rotateX(0deg) rotateY(0deg);}
+    to{transform:rotateX(360deg) rotateY(360deg);}
+  }
+
+  .cubo {
+    animation: loop 20s linear infinite;
+  }
+
   /* configuração da <grid> para divisão das imagens em colunas*/
   .formacao .grid {
     display: grid;
