@@ -15,7 +15,6 @@ body {
   font-size: 12px;
 }
 
-
 /* se a tela tiver pelo menos 400px vai carregar esses estilos */
 @media (min-width: 200px) {
   body {  
@@ -25,6 +24,7 @@ body {
   }
   
 }
+
 /* se a tela tiver pelo menos 400px vai carregar esses estilos */
 @media (min-width: 400px) {
   body {  
@@ -43,8 +43,8 @@ body {
   }
   
 }
-
-
+  
+}
 /* se a tela tiver pelo menos 1200px vai carregar esses estilos */
 @media (min-width: 1200px) {
   body{
@@ -219,8 +219,8 @@ a:hover {
   .cubogeral {
     /*clip-path: polygon(89% 0, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);*/
     margin-right: 11em;
-    height: 320px;
-    width: 350px;
+    height: 160px;
+    width: 125px;
     border-radius: 0px;
     transition: 0.4s; 
   }
@@ -244,55 +244,55 @@ a:hover {
  /* configuração do cubo alan para rodar a imagem no sobre*/
  
  .cubogeral {
-   margin-top: 150px;
+   margin-top: 75px;
    perspective: 1000px;
    perspective-origin: 50% 50%;
  }
  
  .cubo {
     transform-style: preserve-3d;
-    width: 20px;
-    height: 25px;
-    margin: 30px;
-    margin-left: 250px;
+    width: 10px;
+    height: 12.5px;
+    margin: 15px;
+    margin-left: 125px;
     position: relative;
   }
 
   .cubo img {
     position: absolute;
     opacity: 0.85;
-    height: 200px;
-    width: 200px;
+    height: 100px;
+    width: 100px;
   }
 
   .cubo img:nth-child(1) 
   {
-    transform: rotate(0deg) translateZ(100px);
+    transform: rotate(0deg) translateZ(50px);
   }
 
   .cubo img:nth-child(2) 
   {
-    transform: rotateY(90deg) translateZ(100px);
+    transform: rotateY(90deg) translateZ(50px);
   }
 
   .cubo img:nth-child(3) 
   {
-    transform: rotateY(180deg) translateZ(100px);
+    transform: rotateY(180deg) translateZ(50px);
   }
 
   .cubo img:nth-child(4) 
   {
-    transform: rotateY(-90deg) translateZ(100px);
+    transform: rotateY(-90deg) translateZ(50px);
   }
 
   .cubo img:nth-child(5) 
   {
-    transform: rotateX(90deg) translateZ(100px);
+    transform: rotateX(90deg) translateZ(50px);
   }
 
   .cubo img:nth-child(6) 
   {
-    transform: rotateX(-90deg) translateZ(100px);
+    transform: rotateX(-90deg) translateZ(50px);
   }
 
   @keyframes loop{
