@@ -38,7 +38,7 @@ body {
 /* se a tela tiver pelo menos 600px vai carregar esses estilos */
 @media (min-width: 600px) {
   body {
-    font-size: 14px;
+    font-size: 18px;
     min-height: 100vh;    
   }
 }
@@ -215,10 +215,10 @@ a:hover {
 
   .alan,
   .cubogeral {
-    clip-path: polygon(89% 0, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);
+    /*clip-path: polygon(89% 0, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%);*/
     margin-right: 1.5em;
     height: 250px;
-    width: 154.5px;
+    width: /*154.5px*/ 240px;
     border-radius: 0px;
     transition: 0.4s; 
   }
@@ -243,14 +243,14 @@ a:hover {
  
  .cubogeral {
    margin-top: 75px;
-   perspective: 1000px;
-   perspective-origin: 50% 50%;
+   perspective: 700px;
+   perspective-origin: 0px -100px;
  }
  
  .cubo {
     transform-style: preserve-3d;
-    width: 10px;
-    height: 12.5px;
+    width: /*10px*/ 50%;
+    height: /*12.5px*/ 100%;
     margin: 15px;
     margin-left: 25px;
     position: relative;
@@ -258,12 +258,13 @@ a:hover {
 
   .cubo img {
     position: absolute;
-    opacity: 0.85;
+    opacity: 0.90;
     height: 150px;
     width: 150px;
   }
 
-  .cubo img:nth-child(1) 
+  
+  .cubo img:nth-child(6) 
   {
     transform: rotate(0deg) translateZ(75px);
   }
@@ -273,7 +274,7 @@ a:hover {
     transform: rotateY(90deg) translateZ(75px);
   }
 
-  .cubo img:nth-child(3) 
+  .cubo img:nth-child(5) 
   {
     transform: rotateY(180deg) translateZ(75px);
   }
@@ -283,23 +284,60 @@ a:hover {
     transform: rotateY(-90deg) translateZ(75px);
   }
 
-  .cubo img:nth-child(5) 
+  .cubo img:nth-child(3) 
   {
     transform: rotateX(90deg) translateZ(75px);
   }
 
-  .cubo img:nth-child(6) 
+  .cubo img:nth-child(1) 
   {
     transform: rotateX(-90deg) translateZ(75px);
   }
 
+
+/*
+  .cubo img:nth-child(1) 
+  {
+    transform: translateZ(75px);
+  }
+
+  .cubo img:nth-child(2) 
+  {
+    transform: translateX(75px) rotateY(90deg) ;
+  }
+
+  .cubo img:nth-child(3) 
+  {
+    transform: translateZ(-75px);
+  }
+
+  .cubo img:nth-child(4) 
+  {
+    transform: translateX(-75px) rotateY(90deg);
+  }
+
+  .cubo img:nth-child(5) 
+  {
+    transform: translateY(-75px) rotateX(90deg) ;
+  }
+
+  .cubo img:nth-child(6) 
+  {
+    transform: translateY(75px) rotateX(90deg);
+  }
+*/
+
   @keyframes loop{
-    from{transform:rotateX(0deg) rotateY(0deg);}
-    to{transform:rotateX(360deg) rotateY(360deg);}
+    /*from{transform:rotateX(0deg) rotateY(0deg);}
+    to{transform:rotateX(360deg) rotateY(360deg);}*/
+
+    from {transform: rotateY(0deg);}
+    to {transform: rotateY(360deg);}
+    
   }
 
   .cubo {
-    animation: loop 20s linear infinite;
+    animation: loop 20s infinite linear;
   }
 
   /* configuração da <grid> para divisão das imagens em colunas*/
