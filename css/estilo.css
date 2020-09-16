@@ -270,3 +270,11 @@ footer {
     padding: 0 0 50px 0;
 }
 
+.whats {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: green;
+    padding: 10px;
+}
+
