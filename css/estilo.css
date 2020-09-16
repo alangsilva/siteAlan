@@ -1,0 +1,272 @@
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+/* gestão do header */
+
+header {
+    
+    height: 45px;
+    width: 100%;
+    background-color: black;
+    font-size: 20px;
+    position: fixed;
+    z-index: 1000;
+}
+
+#menu {
+    padding: 10px;
+    text-align: center;
+}    
+
+#menu a {
+    text-decoration: none;
+    color:  #E7E2FC;
+    padding: 190px;
+    font-size: 25px;
+    display: inline;
+}
+
+@media (max-width: 1700px) {
+    #menu a {
+        color:  #E7E2FC;
+        padding: 145px;
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 1500px) {
+    #menu a {
+        color:  #E7E2FC;
+        padding: 100px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1100px) {
+    #menu a {
+        color:  #E7E2FC;
+        padding: 65px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    #menu a {
+        padding: 53px;
+        
+    }
+}
+
+@media (max-width: 700px) {
+    #menu a {
+        padding: 40px;
+        
+    }
+}
+
+@media (max-width: 600px) {
+    #menu a {
+        padding: 28px;
+        
+    }
+}
+
+@media (max-width: 500px) {
+    #menu a {
+        padding: 18px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    #menu a {
+        padding: 12px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 300px) {
+    #menu a {
+        padding: 3px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 200px) {
+    #menu a {
+        padding: 1px;
+        font-size: 8px;
+    }
+}
+
+/* Gestão Content */
+
+#home,
+#sobre,
+#projetos,
+#contato {
+    padding: 95px 0 0 0;
+    min-height: 1000px;
+    background-color: #E7E2FC;
+    /*overflow: auto; */
+}
+
+h2 {
+    font-size: 60px;
+    padding: 60px 60px 60px 60px;
+}
+
+p {
+    padding: 100px 50px 0 50px;
+    font-size: 50px;
+}
+
+@media (max-width: 1500px) {
+    h2 {
+        font-size: 50px;
+        padding: 40px 40px 40px 40px;
+    }
+    
+    p {
+        padding: 80px 40px 0 40px;
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1000px) {
+    h2 {
+        font-size: 40px;
+        padding: 30px 30px 30px 30px;
+    }
+    
+    p {
+        padding: 60px 30px 0 30px;
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 700px) {
+    h2 {
+        font-size: 30px;
+        padding: 20px 20px 20px 20px;
+    }
+    
+    p {
+        padding: 40px 15px 0 15px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    h2 {
+        font-size: 20px;
+        padding: 10px 10px 10px 10px;
+    }
+    
+    p {
+        padding: 30px 10px 0 10px;
+        font-size: 20px;
+    }
+}
+
+/* Gestão Home */
+
+#home {
+    padding: 90px 0 10px 0;    
+    background-image: url(../img/PapelParede6.png);
+    background-size: 100%;
+    background-color: white;
+    min-height: 868px;
+    text-shadow: white 4.5px 4.5px, white -4.5px 4.5px, white 4.5px 4.5px, white -4.5px -4.5px;    
+}
+
+.A {
+    text-align: left;
+    font-size: 100px;
+    padding: 50px 0 0 0;
+}
+
+.B {
+    text-align: center;
+    font-size: 100px;
+    padding: 150px 0px 0 0;
+}
+
+
+.C {
+    text-align: right;
+    font-size: 100px;
+    padding: 250px 50px 0 0;
+}
+
+@media (max-width: 1200px) {
+    #home {
+        background-image: url(../img/PapelParede6.png);
+        background-size: 100%;
+        max-height: 10px;
+        
+    }
+    
+    .A {
+        text-align: left;
+        font-size: 30px;
+        padding: 20px 0 0 0;
+    }
+    
+    .B {
+        text-align: center;
+        font-size: 30px;
+        padding: 60px 0 0 0;
+    }
+
+    .C {
+        text-align: right;
+        font-size: 30px;
+        padding: 100px 0 0 0;
+    }
+
+    .h1 {
+     font-size: 30px;
+    }
+    
+}
+
+/* Animação #home */
+
+.animacao {
+    transform: scale(0.5) translatey(50vh);   
+    opacity: 0;
+    animation: linear 2s animacaoTitulos forwards;
+}
+
+@keyframes animacaoTitulos {
+    0% {
+        transform: scale(0.5) translatey(50vh);
+        opacity: 0;
+    }        
+
+    100% {
+        transform: scale(1) translatey(0);
+        opacity: 1;
+    }
+}
+
+/* Gestão Contato */
+
+#contato {
+    min-height: 800px;
+}
+
+/* Gestão footer*/
+
+footer {
+    margin: auto;
+    background-color: #E7E2FC;
+    text-align: center;
+    font-size: 15px;
+    height: 50px;
+    padding: 0 0 50px 0;
+}
+
