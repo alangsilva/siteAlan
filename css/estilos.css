@@ -43,7 +43,7 @@ body {
   }
 }
   
-}
+
 /* se a tela tiver pelo menos 1200px vai carregar esses estilos */
 @media (min-width: 1200px) {
   body {
