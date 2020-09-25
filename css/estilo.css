@@ -1,6 +1,9 @@
 *{
     margin: 0;
-    padding: 0;    
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;        
 }
 
 /* gestão do header */
@@ -23,7 +26,7 @@ header {
 #menu a {
     text-decoration: none;
     color:  #E7E2FC;
-    padding: 190px;
+    padding: 170px;
     font-size: 25px;
     display: inline;
 }
@@ -36,10 +39,35 @@ header {
     }
 }
 
+@media (max-width: 1600px) {
+    #menu a {
+        color:  #E7E2FC;
+        padding: 120px;
+        font-size: 20px;
+    }
+}
+
+
 @media (max-width: 1500px) {
     #menu a {
         color:  #E7E2FC;
         padding: 100px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1350px) {
+    #menu a {
+        color:  #E7E2FC;
+        padding: 90px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    #menu a {
+        color:  #E7E2FC;
+        padding: 80px;
         font-size: 20px;
     }
 }
@@ -52,45 +80,53 @@ header {
     }
 }
 
+@media (max-width: 900px) {
+    #menu a {
+        padding: 50px;
+        
+    }
+}
+
 @media (max-width: 800px) {
     #menu a {
-        padding: 53px;
+        padding: 45px;
+        font-size: 18px;
         
     }
 }
 
 @media (max-width: 700px) {
     #menu a {
-        padding: 40px;
+        padding: 35px;
         
     }
 }
 
 @media (max-width: 600px) {
     #menu a {
-        padding: 28px;
-        
+        padding: 25px;
+        font-size: 15px;
     }
 }
 
 @media (max-width: 500px) {
     #menu a {
-        padding: 18px;
-        font-size: 18px;
+        padding: 15px;
+        font-size: 15px;
     }
 }
 
 @media (max-width: 400px) {
     #menu a {
-        padding: 12px;
-        font-size: 13px;
+        padding: 10px;
+        font-size: 10px;
     }
 }
 
 @media (max-width: 300px) {
     #menu a {
         padding: 3px;
-        font-size: 10px;
+        font-size: 8px;
     }
 }
 
@@ -104,12 +140,13 @@ header {
 /* Gestão Content */
 
 #home,
-#sobre,
-#projetos,
+#produtos,
+#quemsomos,
 #contato {
+    background-color: white;
     padding: 95px 0 0 0;
     min-height: 1000px;
-    background-color: #E7E2FC;
+    
     /*overflow: auto; */
 }
 
@@ -175,61 +212,269 @@ p {
 
 #home {
     padding: 90px 0 10px 0;    
-    background-image: url(../img/PapelParede6.png);
-    background-size: 100%;
-    background-color: white;
-    min-height: 868px;
-    text-shadow: white 4.5px 4.5px, white -4.5px 4.5px, white 4.5px 4.5px, white -4.5px -4.5px;    
+    background-image: url(../img/Rafha3.png);
+    background-size: 850px 850px;
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 850px;
+    text-shadow: rgb(126, 208, 223) 1.5px 1.5px;
+}
+
+.whatshome {
+    font: arial;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    padding: 10px;
+    border: solid;
+    
+}
+
+#icone {
+    width: 30px;
+    height: 30px;
+    
 }
 
 .A {
     text-align: left;
     font-size: 100px;
-    padding: 50px 0 0 0;
+    padding: 50px 0 0 50px;
+    color: rgb(255, 78, 202);
 }
 
 .B {
-    text-align: center;
+    text-align: left;
     font-size: 100px;
-    padding: 150px 0px 0 0;
+    padding: 50px 0 0 250px;
+    color: rgb(255, 78, 202);
 }
-
 
 .C {
-    text-align: right;
-    font-size: 100px;
-    padding: 250px 50px 0 0;
+    text-align: left;
+    font-size: 30px;
+    text-align: justify;
+    padding: 150px 990px 0 200px;
+    color: black;
+    text-shadow: none;
+    margin: 0 50px;
 }
 
-@media (max-width: 1200px) {
+.D {
+    text-align: left;
+    font-size: 50px;
+    padding: 100px 0 50px 50px;
+    text-shadow: none;
+}
+
+
+@media (max-width: 800px) {
     #home {
-        background-image: url(../img/PapelParede6.png);
-        background-size: 100%;
-        max-height: 10px;
-        
+        padding: 0;    
+        background-size: 350px 350px;
+        background-position: center;
+        min-height: 50px;
     }
-    
+        
     .A {
-        text-align: left;
-        font-size: 30px;
-        padding: 20px 0 0 0;
+        text-align: center;
+        font-size: 50px;
+        padding: 180px 0 0 0;
     }
     
     .B {
         text-align: center;
+        font-size: 50px;
+        padding: 20px 0 0 0;
+        
+    }
+    
+    .C {
+        text-align: center;
+        font-size: 35px;
+        text-align: justify;
+        padding: 380px 15px 15px 15px;
+        margin: 0;
+    }
+    
+    .D {
+        text-align: left;
         font-size: 30px;
+        padding: 5px;
+    }
+
+    .whatshome {
+        font-size: 30px;
+        padding: 5px 1px 0 1px;
+        
+        
+    }
+
+    #icone {
+        width: 25px;
+        height: 25px;
+        
+    }
+    
+}
+
+@media (max-width: 600px) {
+    #home {
+        padding: 0;    
+        background-size: 200px 200px;
+        background-position: center;
+        min-height: 50px;
+    }
+    
+    
+    
+    
+    .A {
+        text-align: center;
+        font-size: 25px;
+        padding: 80px 0 0 0;
+    }
+    
+    .B {
+        text-align: center;
+        font-size: 25px;
+        padding: 8px 0 0 0;
+        
+    }
+    
+    .C {
+        text-align: center;
+        font-size: 18px;
+        text-align: justify;
+        padding: 230px 15px 15px 15px;
+        margin: 0;
+    }
+    
+    .D {
+        text-align: left;
+        font-size: 15px;
+        padding: 3px;
+    }
+
+    .whatshome {
+        font-size: 15px;
+        padding: 5px 1px 0 1px;
+        
+        
+    }
+
+    #icone {
+        width: 12px;
+        height: 12px;
+        
+    }
+    
+}
+
+@media (max-width: 400px) {
+    #home {
+        padding: 0;    
+        background-size: 150px 150px;
+        background-position: center;
+        min-height: 50px;
+    }
+    
+    
+    
+    
+    .A {
+        text-align: center;
+        font-size: 12px;
         padding: 60px 0 0 0;
     }
-
+    
+    .B {
+        text-align: center;
+        font-size: 12px;
+        padding: 5px 0 0 0;
+        
+    }
+    
     .C {
-        text-align: right;
-        font-size: 30px;
-        padding: 100px 0 0 0;
+        text-align: center;
+        font-size: 12px;
+        text-align: justify;
+        padding: 180px 15px 5px 15px;
+        margin: 0;
+    }
+    
+    .D {
+        text-align: left;
+        font-size: 12px;
+        padding: 1px;
     }
 
-    .h1 {
-     font-size: 30px;
+    .whatshome {
+        font-size: 12px;
+        padding: 5px 1px 0 1px;
+        
+        
     }
+
+    #icone {
+        width: 10px;
+        height: 10px;
+        
+    }
+    
+}
+
+
+@media (max-width: 200px) {
+    #home {
+        padding: 0;    
+        background-size: 150px 150px;
+        background-position: center;
+        min-height: 50px;
+    }
+    
+    
+    
+    .A {
+        text-align: center;
+        font-size: 12px;
+        padding: 60px 0 0 0;
+    }
+    
+    .B {
+        text-align: center;
+        font-size: 12px;
+        padding: 5px 0 0 0;
+        
+    }
+    
+    .C {
+        text-align: center;
+        font-size: 11px;
+        text-align: justify;
+        padding: 180px 15px 5px 15px;
+        margin: 0;
+    }
+    
+    .D {
+        text-align: left;
+        font-size: 12px;
+        padding: 15px 1px 1px 1px;
+    }
+
+    .whatshome {
+        font-size: 12px;
+        padding: 1px;
+        
+        
+    }
+
+    #icone {
+        width: 8px;
+        height: 8px;
+        
+    }
+    
     
 }
 
@@ -253,6 +498,128 @@ p {
     }
 }
 
+/* Gestão do Container */
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+    /* border: 1px solid black; */
+}
+
+@media (min-width: 1750px) {
+    .container {
+        width: 1750px;
+        padding: 0;
+    }
+}
+
+
+/* Gestão do Container - linha */
+
+.row {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+    .row:before,
+    .row:after {
+        content: "";
+        display: table;
+    }
+
+    .row:after {
+        clear: both;
+    }
+
+
+/* Gestão do Container - colunas */
+
+.col {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+
+    /* Gestão do Container - reset da magin do diplay: inline-block*/
+    margin-right: -4px;
+
+    /* Gestão do Container - rack para dar suporte a navegadores mais antigos, como o IE*/
+    *zoom: 1;
+    *display: inline;
+}
+
+@media (max-width: 3000px) {
+    .col-4{
+        width: 25%;
+    } 
+}
+
+@media (max-width: 800px) {
+    .col-4{
+        width: 50%;
+    } 
+}
+
+@media (max-width: 450px) {
+    .col-4{
+        width: 100%;
+    } 
+}
+
+/* Gestão do Container - Duas colunas 
+
+@media (min-width: 480px) {
+    .col-2{
+        width: 50%;
+    }
+}
+*/
+
+/* Gestão do Container - Três colunas
+
+@media (min-width: 720px) {
+    .col-3{
+        width: 33.3333%;
+    }
+
+  
+}
+*/
+
+/* Gestão do Container - Quatro colunas*/
+
+
+/* Gestão do Container - Conteúdo e sidebar 
+
+@media (min-width: 920px) {
+    .col-content {
+        width: 65%;
+    }
+
+    .col-sidebar {
+        width: 35%;
+    }
+}
+*/
+
+/* Gestão do Container - usar apenas para teste - demonstração */
+
+.teste {
+    /* background: pink; */
+    padding: 2px;
+    text-align: center;
+    margin: 2px 0;
+    color: black;
+}
+
+.big {
+    height: 50px;
+}
+
 /* Gestão Contato */
 
 #contato {
@@ -272,9 +639,9 @@ footer {
 
 .whats {
     text-decoration: none;
-    color: white;
+    color: black;
     font-size: 20px;
-    background-color: green;
+    background-color: rgb(140, 246, 250);
     padding: 10px;
 }
 
